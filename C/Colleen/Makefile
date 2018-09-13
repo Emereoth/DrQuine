@@ -28,7 +28,7 @@ OBJ_NAMES 	=	$(SRC_NAMES:.c=.o)
 SRC			=	$(addprefix $(SRC_PATH)/,$(SRC_NAMES))
 OBJ			=	$(addprefix $(OBJ_PATH)/,$(OBJ_NAMES))
 
-.PHONY: all clean fclen re fast
+.PHONY: all clean fclean re fast
 
 all : $(NAME)
 
