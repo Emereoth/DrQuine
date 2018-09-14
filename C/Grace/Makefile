@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/04 10:29:31 by acottier          #+#    #+#              #
-#    Updated: 2018/09/05 17:07:43 by acottier         ###   ########.fr        #
+#    Updated: 2018/09/14 14:38:50 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,7 @@ clean :
 
 fclean : clean
 	@rm -f $(NAME) libft_malloc.so
+	@rm -rf Grace_kid.c
 	@printf "${RED}'Grace' executable deleted.${NC}\n"
 
 re : fclean all
