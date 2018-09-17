@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/04 10:29:31 by acottier          #+#    #+#              #
-#    Updated: 2018/09/17 15:45:02 by acottier         ###   ########.fr        #
+#    Updated: 2018/09/17 17:38:32 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ clean :
 
 fclean : clean
 	@rm -f $(NAME)
-	@rm Sully*
+	@rm -f Sully*
 	@printf "${RED}'Sully' executable deleted.${NC}\n"
 
 re : fclean all
