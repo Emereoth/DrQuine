@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/04 10:29:31 by acottier          #+#    #+#              #
-#    Updated: 2018/09/04 10:29:33 by acottier         ###   ########.fr        #
+#    Updated: 2018/09/17 15:37:46 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ clean :
 	@printf "${RED}'Colleen' executable object files deleted.${NC}\n"
 
 fclean : clean
-	@rm -f $(NAME) libft_malloc.so
+	@rm -f $(NAME)
 	@printf "${RED}'Colleen' executable deleted.${NC}\n"
 
 re : fclean all

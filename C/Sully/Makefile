@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/04 10:29:31 by acottier          #+#    #+#              #
-#    Updated: 2018/09/17 15:37:37 by acottier         ###   ########.fr        #
+#    Updated: 2018/09/17 15:45:02 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,13 +15,13 @@ GREEN	=\033[0;32m
 YELLOW	=\033[0;33m
 NC		=\033[0m
 
-NAME 		=	Grace
+NAME 		=	Sully
 FLAGS 		=	-Wall -Wextra -Werror -g3
 
 SRC_PATH	=	sources
 OBJ_PATH	=	objects
 
-SRC_NAMES 	=	Grace.c
+SRC_NAMES 	=	Sully.c
 
 OBJ_NAMES 	=	$(SRC_NAMES:.c=.o)
 
@@ -34,7 +34,7 @@ all : $(NAME)
 
 $(NAME) : $(OBJ)
 	@(time gcc $(FLAGS) $^ -o $@) 2> time.txt
-	@printf "${GREEN}'Grace' executable compilation finished:${NC} "
+	@printf "${GREEN}'Sully' executable compilation finished:${NC} "
 	@printf "${YELLOW}"
 	@cat time.txt | head -2 | tail -1
 	@printf "${NC}"
@@ -45,12 +45,12 @@ $(OBJ_PATH)/%.o : $(SRC_PATH)/%.c
 
 clean :
 	@rm -rf $(OBJ_PATH)
-	@printf "${RED}'Grace' executable object files deleted.${NC}\n"
+	@printf "${RED}'Sully' executable object files deleted.${NC}\n"
 
 fclean : clean
 	@rm -f $(NAME)
-	@rm -rf Grace_kid.c
-	@printf "${RED}'Grace' executable deleted.${NC}\n"
+	@rm Sully*
+	@printf "${RED}'Sully' executable deleted.${NC}\n"
 
 re : fclean all
 
