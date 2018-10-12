@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/04 10:29:31 by acottier          #+#    #+#              #
-#    Updated: 2018/09/17 17:38:32 by acottier         ###   ########.fr        #
+#    Updated: 2018/10/12 14:47:38 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,11 +45,11 @@ $(OBJ_PATH)/%.o : $(SRC_PATH)/%.c
 
 clean :
 	@rm -rf $(OBJ_PATH)
+	@rm -f Sully*
 	@printf "${RED}'Sully' executable object files deleted.${NC}\n"
 
 fclean : clean
 	@rm -f $(NAME)
-	@rm -f Sully*
 	@printf "${RED}'Sully' executable deleted.${NC}\n"
 
 re : fclean all
