@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 13:55:41 by acottier          #+#    #+#              #
-#    Updated: 2018/09/14 15:32:37 by acottier         ###   ########.fr        #
+#    Updated: 2018/10/16 10:37:10 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ TARGETS		=	Colleen \
 				Grace \
 				Sully
 
-.PHONY: all clean fclen re fast
+.PHONY: all clean fclean re fast
 
 all : $(NAME)
 
