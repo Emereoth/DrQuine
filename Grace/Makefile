@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/04 10:29:31 by acottier          #+#    #+#              #
-#    Updated: 2018/09/17 15:37:37 by acottier         ###   ########.fr        #
+#    Updated: 2018/10/18 14:03:41 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ YELLOW	=\033[0;33m
 NC		=\033[0m
 
 NAME 		=	Grace
-FLAGS 		=	-Wall -Wextra -Werror -g3
+FLAGS 		=	-Wall -Wextra -Werror
 
 SRC_PATH	=	sources
 OBJ_PATH	=	objects
