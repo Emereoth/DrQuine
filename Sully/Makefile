@@ -6,7 +6,7 @@
 #    By: acottier <acottier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/04 10:29:31 by acottier          #+#    #+#              #
-#    Updated: 2018/10/17 10:59:15 by acottier         ###   ########.fr        #
+#    Updated: 2018/11/20 11:29:31 by acottier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ YELLOW	=\033[0;33m
 NC		=\033[0m
 
 NAME 		=	Sully
-FLAGS 		=	-Wall -Wextra -Werror -g3
+FLAGS 		=	-Wall -Wextra -Werror
 
 SRC_PATH	=	sources
 OBJ_PATH	=	objects
@@ -45,11 +45,11 @@ $(OBJ_PATH)/%.o : $(SRC_PATH)/%.c
 
 clean :
 	@rm -rf $(OBJ_PATH)
-	@rm -f Sully_*
 	@printf "${RED}'Sully' executable object files deleted.${NC}\n"
 
 fclean : clean
 	@rm -f $(NAME)
+	@rm -f Sully_*
 	@printf "${RED}'Sully' executable deleted.${NC}\n"
 
 re : fclean all
